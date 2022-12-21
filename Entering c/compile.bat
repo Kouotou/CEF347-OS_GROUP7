@@ -1,5 +1,5 @@
 nasm Boot.asm -f bin -o bin\bootsect.bin
-nasm Kernel_Entry.asm -f elf -o bin\Entry.bin
+nasm Kernel_Entry.asm -f win32 -o bin\Entry.bin
 
 gcc -m32 -ffreestanding -c main.c -o bin\kernel.o
 
